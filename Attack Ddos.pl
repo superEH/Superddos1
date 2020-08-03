@@ -66,7 +66,7 @@ print "\033[1;31m▓█       ▒█▒ ▒█░  ░█▒   ▒███▓�
 
 print "\033[1;37m\033[1;37m\n\n";
 print  <<EOTEXT;
-Welcome to Attack Ddos - the low bandwidth, yet greedy and poisonous HTTP client
+
 
 options
 	|==============================================================|
@@ -273,11 +273,7 @@ print "\033[1;31m\tFailed after $times[$i] seconds.\n";
     }
     if ( $delay < 166 ) {
         print <<EOSUCKS2BU;
-Since the timeout ended up being so small ($delay seconds) and it generally 
-takes between 200-500 threads for most servers and assuming any latency at 
-all...  you might have trouble using Slowloris against this target.  You can 
-tweak the -timeout flag down to less than 10 seconds but it still may not 
-build the sockets in time.
+
 EOSUCKS2BU
     }
 }
